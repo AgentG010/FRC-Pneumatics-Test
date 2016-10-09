@@ -5,12 +5,9 @@
 class Robot: public IterativeRobot
 {
     private:
-        Command* autonomousCommand;
 
         void RobotInit()
         {
-            CommandBase::init();
-            autonomousCommand = NULL; // No autonomous :P
         }
 
         void DisabledInit()
@@ -24,7 +21,6 @@ class Robot: public IterativeRobot
 
         void AutonomousInit()
         {
-            if (autonomousCommand != NULL) autonomousCommand->Start();
         }
 
         void AutonomousPeriodic()
@@ -35,7 +31,6 @@ class Robot: public IterativeRobot
         void TeleopInit()
         {
             // Stops auto mode
-            if (autonomousCommand != NULL) autonomousCommand->Cancel();
         }
 
         void TeleopPeriodic()

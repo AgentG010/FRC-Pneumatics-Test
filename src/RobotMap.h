@@ -4,7 +4,7 @@
 #include "WPILib.h"
 
 // Ports on Solenoid Breakout Board for dual solenoid
-#define PISTON_EXTEND_PORT 1
-#define PISTON_RETRACT_PORT 2
+#define PISTON_EXTEND_PORT 0
+#define PISTON_RETRACT_PORT 1
 
 #endif

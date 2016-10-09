@@ -9,7 +9,7 @@
 
 
 ####Setup:
- * Double Solenoid connected to PCM on ports 1 and 2
+ * Double Solenoid connected to PCM on ports 0 and 1
  * Only 1 joystick used
  * Trigger of Joystick extends the piston
  * Button 2 of Joystick retracts the piston

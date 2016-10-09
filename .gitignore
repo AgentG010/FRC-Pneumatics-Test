@@ -53,3 +53,5 @@ local.properties
 
 # Ignore built stuff (contents of Debug)
 Debug/*
+
+sysProps.xml
