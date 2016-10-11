@@ -1,10 +1,8 @@
 #include "PistonExtend.h"
 
-// takes in the piston to extend
-PistonExtend::PistonExtend(Piston* pistonIn)
+PistonExtend::PistonExtend()
 {
     Requires(piston);
-    _piston = pistonIn;
 }
 
 void PistonExtend::Initialize()
@@ -13,12 +11,12 @@ void PistonExtend::Initialize()
 
 void PistonExtend::Execute()
 {
-    _piston->extend();
+    piston->extend();
 }
 
 bool PistonExtend::IsFinished()
 {
-	return false;
+	return true;
 }
 
 void PistonExtend::End()

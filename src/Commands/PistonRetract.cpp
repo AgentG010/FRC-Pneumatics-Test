@@ -1,10 +1,8 @@
 #include "PistonRetract.h"
 
-// takes in the piston to retract
-PistonRetract::PistonRetract(Piston* pistonIn)
+PistonRetract::PistonRetract()
 {
     Requires(piston);
-    _piston = pistonIn;
 }
 
 void PistonRetract::Initialize()
@@ -13,12 +11,12 @@ void PistonRetract::Initialize()
 
 void PistonRetract::Execute()
 {
-    _piston->retract();
+    piston->retract();
 }
 
 bool PistonRetract::IsFinished()
 {
-    return false;
+    return true;
 }
 
 void PistonRetract::End()

@@ -1,9 +1,8 @@
 #include "PistonSolenoidOff.h"
 
-PistonSolenoidOff::PistonSolenoidOff(Piston* pistonIn)
+PistonSolenoidOff::PistonSolenoidOff()
 {
     Requires(piston);
-    _piston = pistonIn;
 }
 
 void PistonSolenoidOff::Initialize()
@@ -12,12 +11,12 @@ void PistonSolenoidOff::Initialize()
 
 void PistonSolenoidOff::Execute()
 {
-    _piston->solenoidOff();
+    piston->solenoidOff();
 }
 
 bool PistonSolenoidOff::IsFinished()
 {
-	return false;
+	return true;
 }
 
 void PistonSolenoidOff::End()

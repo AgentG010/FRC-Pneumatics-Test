@@ -9,7 +9,7 @@ class PistonRetract: public CommandBase
     private:
         Piston* _piston;
     public:
-        PistonRetract(Piston* pistonIn);
+        PistonRetract();
         void Initialize();
         void Execute();
         bool IsFinished();

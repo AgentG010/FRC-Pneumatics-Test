@@ -11,9 +11,9 @@ OI::OI()
     JoystickButton* pistonExtend = new JoystickButton(joystick, 1);
     JoystickButton* pistonRetract = new JoystickButton(joystick, 2);
 
-    pistonExtend->WhenPressed(new PistonExtend(CommandBase::piston));
-    pistonExtend->WhenReleased(new PistonSolenoidOff(CommandBase::piston));
+    pistonExtend->WhenPressed(new PistonExtend());
+    pistonExtend->WhenReleased(new PistonSolenoidOff());
 
-    pistonRetract->WhenPressed(new PistonRetract(CommandBase::piston));
-    pistonRetract->WhenReleased(new PistonSolenoidOff(CommandBase::piston));
+    pistonRetract->WhenPressed(new PistonRetract());
+    pistonRetract->WhenReleased(new PistonSolenoidOff());
 }

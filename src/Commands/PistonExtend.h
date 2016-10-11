@@ -6,10 +6,8 @@
 
 class PistonExtend: public CommandBase
 {
-    private:
-        Piston* _piston;
     public:
-        PistonExtend(Piston* pistonIn);
+        PistonExtend();
         void Initialize();
         void Execute();
         bool IsFinished();

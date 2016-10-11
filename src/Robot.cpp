@@ -8,6 +8,7 @@ class Robot: public IterativeRobot
 
         void RobotInit()
         {
+            CommandBase::init();
         }
 
         void DisabledInit()
@@ -30,7 +31,6 @@ class Robot: public IterativeRobot
 
         void TeleopInit()
         {
-            // Stops auto mode
         }
 
         void TeleopPeriodic()

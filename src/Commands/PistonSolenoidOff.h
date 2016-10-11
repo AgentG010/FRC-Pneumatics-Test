@@ -6,10 +6,8 @@
 
 class PistonSolenoidOff: public CommandBase
 {
-    private:
-        Piston* _piston;
     public:
-        PistonSolenoidOff(Piston* pistonIn);
+        PistonSolenoidOff();
         void Initialize();
         void Execute();
         bool IsFinished();
